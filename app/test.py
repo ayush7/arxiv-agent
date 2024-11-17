@@ -1,5 +1,5 @@
 from website_scrape import page_scraper as scraper
-from crawl_website import depth, crawl_helpers
+from crawl_website import depth_helper, crawl_helpers
 from helpers import params
 # from agents import invoke_agents
 from pdf_parser import download_pdf, parse_pdf
@@ -25,3 +25,24 @@ for x in scrap_out["links"]["internal"]:
 for pdflink in pdf_links:
     if download_pdf.is_arxiv_pdf(pdflink):
         download_pdf
+
+
+
+# Depth function 
+
+def scrape_and_download(url, depth):
+    depth_obj = depth_helper.DepthKeeper(depth_limit=depth)
+    
+
+    while depth_obj.check_depth():
+
+        scrap_obj = scraper.ScrapePage(url=url)
+        scrap_out = asyncio.run(scrap_obj.scrape_page())
+
+
+        pdf_links = []
+        for x in scrap_out["links"]["internal"]:
+            if 'pdf' in x['href']:
+                print(x)
+                if x["href"] not in pdf_links:
+                    pdf_links.append(x["href"])

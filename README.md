@@ -8,10 +8,13 @@ A LLM based crawler/scraper for Arxiv to read the latest papers from arxiv.org a
 - [x] Website Scraper
 - [x] PDF Links Extraction
 - [x] PDF scraper
-- [ ] Modifiable depth for crawler
+- [x] Support OpenAI calls
+- [x] Support Gemini calls
+- [x] Support Anthropic/Claude
+- [ ] Modifiable depth for crawler - Might not be needed as arxiv presents all newly released papers in a single page
 - [ ] Agents - From ground UP
 - [ ] Agents - Add CrewAI agents and experiment with it some of their tools
-- [ ] Enable Local Models with Ollama
+- [x] :question: Enable Local Models with Ollama - Partially done. Base code written - add prompt completion formats
 - [ ] Create Internal API
 - [ ] GUI - Maybe with streamlit
 - [ ] Dockerize 
