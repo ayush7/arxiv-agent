@@ -49,7 +49,7 @@ class ArxivLinkProcessor:
 
         # Save parsed Data
         if self.save_parsed_data:
-            file_name = uuid.uuid4()
+            file_name = str(uuid.uuid4())
             file_path = os.path.join(self.parsed_data_dir, file_name) + '.json'
             Path(self.parsed_data_dir).mkdir(parents=True, exist_ok=True)
             with open(file_path, 'w', encoding='utf-8') as f:
