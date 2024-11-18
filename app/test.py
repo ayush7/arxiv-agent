@@ -46,3 +46,11 @@ def scrape_and_download(url, depth):
                 print(x)
                 if x["href"] not in pdf_links:
                     pdf_links.append(x["href"])
+
+
+
+
+
+
+
+# Test model calls

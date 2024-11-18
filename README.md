@@ -13,7 +13,15 @@ A LLM based crawler/scraper for Arxiv to read the latest papers from arxiv.org a
 - [x] Support Anthropic/Claude
 - [ ] Modifiable depth for crawler - Might not be needed as arxiv presents all newly released papers in a single page
 - [ ] Agents - From ground UP
+    - [ ] summarizer
+    - [ ] post_writer 
+    - [ ] daily report
+    - [ ] badmouth professor
 - [ ] Agents - Add CrewAI agents and experiment with it some of their tools
+    - [ ] summarizer
+    - [ ] post_writer 
+    - [ ] daily report
+    - [ ] badmouth professor
 - [x] :question: Enable Local Models with Ollama - Partially done. Base code written - add prompt completion formats
 - [ ] Create Internal API
 - [ ] GUI - Maybe with streamlit
