@@ -35,4 +35,30 @@ class Agents:
         else:
             self.bad_agent = False
 
+
+    def run_post_writer(self, data):
+        pass 
+
+
+    def run_summary(self, data):
+        pass 
+
+
+    def run_badmouth(self, data):
+        pass 
+    
+
+    def run_singular_agents(self, data):
+        """
+        Runs agents that only depend on single pdf file
+        """
+        pass 
+
+
+    def run_agents(self, data_singulars, data_all):
+        """
+        Runs all agents
+        """
+        pass 
+
         

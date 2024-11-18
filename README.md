@@ -11,8 +11,10 @@ A LLM based crawler/scraper for Arxiv to read the latest papers from arxiv.org a
 - [x] Support OpenAI calls
 - [x] Support Gemini calls
 - [x] Support Anthropic/Claude
-- [ ] Modifiable depth for crawler - Might not be needed as arxiv presents all newly released papers in a single page
+- [ ] :question: Modifiable depth for crawler - Might not be needed as arxiv presents all newly released papers in a single page
+- [x] Module for single Link Processing
 - [ ] Agents - From ground UP
+    - [ ] :exclamation: Base structure
     - [ ] summarizer
     - [ ] post_writer 
     - [ ] daily report
@@ -29,6 +31,6 @@ A LLM based crawler/scraper for Arxiv to read the latest papers from arxiv.org a
 
 
 * Maybe do this too 
-- [ ] Add TTS with Cartesia API or 
+- [ ] Add TTS with Cartesia API 
 - [ ] Persistent RAG database with classic RAG techniques
 - [ ] Advanced RAG implementation with Colpali and GraphRAG 
